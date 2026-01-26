@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="shimmer_blue">#3A3046E2</color>
+    <color name="shimmer_yelow">#3AFFE400</color>
+
+    <color name="primary_blue">#3046E2</color>
+    <color name="primary_blue_27trans">#453046E2</color>
+    <color name="accent_blue">#AD3046E2</color>
+    <color name="accent_pink">#DE37F0</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_trans_25">#61FFFFFF</color>
+    <color name="white_trans_100">#08FFFFFF</color>
+    <color name="black">#FF000000</color>
+
+    <color name="grey_100">#BCBCBC</color>
+    <color name="grey_600">#CF757575</color>
+    <color name="grey_800">#4B4848</color>
+    <color name="yellow_grey_800">#666030</color>
+    <color name="grey_trans_bg">#33DCDCDC</color>
+
+    <color name="green">#269D2A</color>
+    <color name="red">#F44336</color>
+    <color name="yellow">#E4C814</color>
+    <color name="yellow_old">#BAA30C</color>
+    <color name="yellow_trans_25">#41F2D515</color>
+    <color name="orange">#EDAA2E</color>
+
+
+</resources>

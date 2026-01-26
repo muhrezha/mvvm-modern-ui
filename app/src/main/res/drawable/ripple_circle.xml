@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background shape -->
+    <item android:drawable="@drawable/shape_border_radius_circle"/>
+
+    <!-- Ripple effect -->
+    <item>
+        <ripple android:color="?attr/colorControlHighlight">
+            <item>
+                <shape android:shape="oval">
+                    <solid android:color="@color/white" />
+                </shape>
+            </item>
+        </ripple>
+    </item>
+</layer-list>

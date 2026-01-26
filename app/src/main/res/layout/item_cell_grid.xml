@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_margin="6dp" android:foreground="?attr/selectableItemBackground"
+    android:clickable="true" android:focusable="true">
+
+    <!-- 1:1 square: lebar mengikuti kolom, tinggi dipaksa sama -->
+    <FrameLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:background="@drawable/card_template_white"
+        android:clickable="true">
+        <TextView
+            android:id="@+id/tvLabel" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:gravity="center"
+            android:padding="24dp" android:textStyle="bold" android:text="1"/>
+    </FrameLayout>
+</androidx.cardview.widget.CardView>

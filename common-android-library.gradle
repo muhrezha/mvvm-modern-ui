@@ -1,0 +1,44 @@
+
+// common-android-library.gradle
+android {
+    compileSdk = libs.versions.compileSdk.get().toInteger()
+
+    defaultConfig {
+        targetSdk = libs.versions.targetSdk.get().toInteger()
+        minSdk = libs.versions.minSdk.get().toInteger()
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles("consumer-rules.pro")
+    }
+
+    buildTypes {
+        release {
+            debuggable false
+            jniDebuggable false
+            proguardFiles(
+                    getDefaultProguardFile("proguard-android-optimize.txt"),
+                    "proguard-rules.pro"
+            )
+        }
+        debug {
+            // It's recommended to keep minifyEnabled false for debug builds
+            // to ensure faster build times and easier debugging.
+            debuggable true
+            jniDebuggable true
+        }
+    }
+
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.valueOf("VERSION_${libs.versions.javaVersion.get()}")
+        targetCompatibility = JavaVersion.valueOf("VERSION_${libs.versions.javaVersion.get()}")
+    }
+
+    // Tambahkan block composeOptions untuk semua module yang pakai Compose
+    composeOptions {
+        kotlinCompilerExtensionVersion = libs.versions.compose.compiler.get()
+    }
+
+    kotlinOptions {
+        jvmTarget = libs.versions.jvmTarget.get()
+    }
+}

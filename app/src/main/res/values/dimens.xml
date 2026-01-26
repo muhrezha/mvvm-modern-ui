@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="font_16_big">16sp</dimen>
+    <dimen name="font_14_mid">14sp</dimen>
+    <dimen name="font_12_normal">12sp</dimen>
+    <dimen name="font_10_small">10sp</dimen>
+
+    <dimen name="btn_radius_10">10dp</dimen>
+    <dimen name="edittext_radius_10">10dp</dimen>
+
+    <dimen name="space_height_23">23dp</dimen>
+    <dimen name="space_width_23">23dp</dimen>
+    <dimen name="space_height_22">22dp</dimen>
+    <dimen name="space_width_22">22dp</dimen>
+    <dimen name="space_height_21">21dp</dimen>
+    <dimen name="space_width_21">21dp</dimen>
+    <dimen name="space_height_20">20dp</dimen>
+    <dimen name="space_width_20">20dp</dimen>
+    <dimen name="space_height_19">19dp</dimen>
+    <dimen name="space_width_19">19dp</dimen>
+    <dimen name="space_height_18">18dp</dimen>
+    <dimen name="space_width_18">18dp</dimen>
+    <dimen name="space_height_17">17dp</dimen>
+    <dimen name="space_width_17">17dp</dimen>
+    <dimen name="space_height_16">16dp</dimen>
+    <dimen name="space_width_16">16dp</dimen>
+    <dimen name="space_height_14">14dp</dimen>
+    <dimen name="space_width_14">14dp</dimen>
+    <dimen name="space_height_12">12dp</dimen>
+    <dimen name="space_width_12">12dp</dimen>
+    <dimen name="space_height_10">10dp</dimen>
+    <dimen name="space_width_10">10dp</dimen>
+    <dimen name="space_height_8">8dp</dimen>
+    <dimen name="space_width_8">8dp</dimen>
+    <dimen name="space_height_6">6dp</dimen>
+    <dimen name="space_width_6">6dp</dimen>
+    <dimen name="space_height_4">4dp</dimen>
+    <dimen name="space_width_4">4dp</dimen>
+
+    <dimen name="padding_10">10dp</dimen>
+    <dimen name="padding_9">9dp</dimen>
+    <dimen name="padding_8">8dp</dimen>
+    <dimen name="padding_7">7dp</dimen>
+    <dimen name="padding_6">6dp</dimen>
+    <dimen name="padding_5">5dp</dimen>
+    <dimen name="padding_4">4dp</dimen>
+    <dimen name="padding_3">3dp</dimen>
+    <dimen name="padding_2">2dp</dimen>
+    <dimen name="padding_1_7">1.6dp</dimen>
+    <dimen name="padding_1_5">1.5dp</dimen>
+    <dimen name="padding_1_2">1.2dp</dimen>
+    <dimen name="padding_1">1dp</dimen>
+
+
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="margin_9">9dp</dimen>
+    <dimen name="margin_8">8dp</dimen>
+    <dimen name="margin_7">7dp</dimen>
+    <dimen name="margin_6">6dp</dimen>
+    <dimen name="margin_5">5dp</dimen>
+    <dimen name="margin_4">4dp</dimen>
+    <dimen name="margin_3">3dp</dimen>
+    <dimen name="margin_2">2dp</dimen>
+    <dimen name="margin_1_7">1.6dp</dimen>
+    <dimen name="margin_1_5">1.5dp</dimen>
+    <dimen name="margin_1_2">1.2dp</dimen>
+    <dimen name="margin_1">1dp</dimen>
+
+</resources>

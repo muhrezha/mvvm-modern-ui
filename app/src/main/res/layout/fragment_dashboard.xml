@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.fragment_case.fragments.DashboardFragment">
+
+    <!-- res/layout/fragment_dashboard.xml -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dashboard"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:id="@+id/tvSubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selamat datang! Ini contoh fragment dengan ViewBinding."
+                android:layout_marginBottom="16dp"/>
+
+            <Button
+                android:id="@+id/btnAction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Aksi Dashboard"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>

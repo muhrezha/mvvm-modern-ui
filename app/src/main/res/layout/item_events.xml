@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="7dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardCornerRadius="23dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Image View -->
+            <ImageView
+                android:id="@+id/ivProductEvent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:contentDescription="Product image"
+                tools:src="@tools:sample/backgrounds/scenic" />
+
+            <!-- Text Overlay di bagian bawah -->
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/ivProductEvent"
+                android:background="@drawable/gradient_overlay"
+                android:padding="12dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Promo Gadget Terbaru"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Diskon hingga 50%"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    android:layout_marginTop="4dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llWishlistEvent"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/ripple_circle_transparant_25"
+                android:clickable="true">
+
+                <ImageView
+                    android:padding="8dp"
+                    android:src="@drawable/ic_wishlist_outline_gray"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_below="@+id/card"
+        android:layout_marginTop="-30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/card_template_bottoms">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="18dp"
+            android:paddingTop="13dp"
+            android:paddingBottom="15dp"
+            android:background="@drawable/ripple_rectangle_transparant"
+            android:clickable="true">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="25dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvTitleEvent"
+                        android:text="Tech Innovation Tech Innovation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter_bold"
+                        android:textSize="13sp"
+                        android:maxLines="2"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvVendorEvent"
+                android:text="PT MHZ Group - IT Education"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey_800"
+                android:textSize="12sp"
+                android:maxLines="2"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="2dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvDateEvent"
+                        android:text="12,14,21 Des 2025, 04, 07 Jan 2025"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="11sp"
+                        android:maxLines="2"
+                        android:layout_marginRight="10dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvTypeEvent"
+                        android:text="Hybrid"
+                        android:textColor="@color/primary_blue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter_bold"
+                        android:textSize="11sp"
+                        android:gravity="end"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvCategoryAndTypeEvent"
+                        android:text="Category IT, Jenis Belajar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/yellow_old"
+                        android:textSize="11sp"
+                        android:maxLines="2"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvPriceEvent"
+                        android:text="Rp. 100.000.000"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter_bold"
+                        android:textSize="11sp"
+                        android:maxLines="2"
+                        android:gravity="end"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

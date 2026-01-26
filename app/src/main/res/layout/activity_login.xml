@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.payungin.views.LoginActivity">
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/ic_launcher_foreground"
+        android:scaleType="fitCenter"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toTopOf="@+id/guide_horizontal_one_33"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.3"
+        app:layout_constraintHeight_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_horizontal_one_33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_horizontal_two_66"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_vertical_one_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_vertical_two_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_email"
+        style="@style/LoginTextInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:startIconDrawable="@drawable/ic_email"
+        app:layout_constraintStart_toStartOf="@+id/guide_vertical_one_start"
+        app:layout_constraintEnd_toEndOf="@id/guide_vertical_two_end"
+        app:layout_constraintTop_toTopOf="@id/guide_horizontal_one_33"
+        android:hint="@string/hint_email">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:text="wanda4des@mailinator.com"
+            android:maxLines="1"
+            android:paddingVertical="16dp"
+            android:textSize="16sp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Space
+        android:id="@+id/spacer_1"
+        app:layout_constraintTop_toBottomOf="@+id/input_email"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_height_6"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_password"
+        style="@style/LoginTextInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/guide_vertical_two_end"
+        app:layout_constraintStart_toStartOf="@+id/guide_vertical_one_start"
+        app:layout_constraintTop_toBottomOf="@+id/spacer_1"
+        app:startIconDrawable="@android:drawable/ic_lock_lock"
+        app:endIconMode="password_toggle"
+        android:visibility="gone"
+        android:hint="@string/hint_password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:paddingVertical="16dp"
+            android:textSize="16sp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/draw_btn_primary"
+        android:text="@string/next"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/guide_vertical_two_end"
+        app:layout_constraintStart_toStartOf="@+id/guide_vertical_one_start"
+        app:layout_constraintTop_toBottomOf="@+id/input_password" />
+
+    <LinearLayout
+        android:id="@+id/linear_loading"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/guide_vertical_two_end"
+        app:layout_constraintStart_toStartOf="@+id/guide_vertical_one_start"
+        app:layout_constraintTop_toBottomOf="@+id/input_password">
+
+        <ProgressBar
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="@string/register_prompt"
+        android:textColor="@color/grey_600"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guide_horizontal_two_66" />
+
+    <include
+        layout="@layout/loading_progress_layout"
+        android:id="@+id/loading_indicator"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

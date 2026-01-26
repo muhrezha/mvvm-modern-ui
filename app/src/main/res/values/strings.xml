@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">My CRUD</string>
+
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="next">Berikutnya</string>
+    <string name="preview">Sebelumnya</string>
+    <string name="login">Login</string>
+    <string name="register_prompt">"Don\'t have an account? Register"</string>
+
+    <string name="content">With the idea of imparting programming
+      knowledge, Mr. Sandeep Jain, an IIT Roorkee alumnus started a
+      dream, GeeksforGeeks. Whether programming excites you or you feel
+      stifled, wondering how to prepare for interview questions or how to
+      ace data structures and algorithms, GeeksforGeeks is a one-stop solution.
+      With every tick of time, we are adding arrows in our quiver. From articles
+      on various computer science subjects to programming problems for practice,
+      from basic to premium courses, from technologies to entrance examinations,
+      we have been building ample content with superior quality. In a short span,
+      we have built a community of 1 Million+ Geeks around the world, 20,000+
+      Contributors and 500+ Campus Ambassadors in various colleges across the nation.
+      Our success stories include a lot of students who benefitted in their placements
+      and landed jobs at tech giants. Our vision is to build a gigantic network of
+      geeks and we are only a fraction of it yet.
+  </string>
+    <string name="lorem_title">Neque porro quisquam est qui dolorem ipsum quia</string>
+    <string name="lorem_desc">"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="jobs">Jobs</string>
+    <string name="learning">Learning</string>
+    <string name="home">Home</string>
+    <string name="transaction">Transaction</string>
+    <string name="voucher">Voucher</string>
+    <string name="teman">Teman</string>
+    <string name="cart">Cart</string>
+    <string name="finance_and_protection">Finance and Protection</string>
+    <string name="marketplace">Marketplace</string>
+    <string name="insurance">Asurance</string>
+    <string name="financial_check_up">Financial Check up</string>
+    <string name="haji">Haji</string>
+    <string name="urun">Urun</string>
+    <string name="car_insurance">Car Insurance</string>
+    <string name="property_insurance">Property Insurance</string>
+    <string name="tga">TGA</string>
+    <string name="events">Events</string>
+
+    <array name="menuOptionsNavDrawer">
+        <item>Home</item>
+        <item>Personal</item>
+        <item>High scores</item>
+        <item>Settings</item>
+        <item>About</item>
+    </array>
+
+</resources>

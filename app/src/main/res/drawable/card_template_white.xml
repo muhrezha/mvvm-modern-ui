@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Shadow layer -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#0D000000"/> <!-- Warna bayangan semi transparan -->
+            <corners android:radius="12dp"/>
+        </shape>
+    </item>
+
+    <!-- Content layer (foreground) -->
+<!--    <item android:left="0dp" android:top="0dp" android:right="0dp" android:bottom="4dp">-->
+<!--        <shape android:shape="rectangle">-->
+<!--            <solid android:color="@android:color/white"/>-->
+<!--            <corners android:radius="12dp"/>-->
+<!--            <stroke-->
+<!--                android:width="0dp"-->
+<!--                android:color="#DDDDDD"/>-->
+<!--        </shape>-->
+<!--    </item>-->
+
+    <!-- Ripple effect -->
+    <item android:left=".6dp" android:top=".7dp" android:right="0dp" android:bottom="4dp">
+        <ripple android:color="?attr/colorControlHighlight">
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="@android:color/white"/>
+                    <corners android:radius="12dp"/>
+                    <stroke
+                        android:width="0dp"
+                        android:color="#DDDDDD"/>
+                </shape>
+            </item>
+        </ripple>
+    </item>
+
+</layer-list>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.tabbar_case.fragments_tab.DashboardFragmentTab">
+
+    <ScrollView
+        android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical" android:padding="16dp"
+            android:layout_width="match_parent" android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvFood"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textStyle="bold" android:text="Food: -" />
+
+            <TextView
+                android:id="@+id/tvDrink"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textStyle="bold" android:text="Drink: -" />
+
+            <View
+                android:layout_width="match_parent" android:layout_height="12dp" />
+
+            <EditText
+                android:id="@+id/etFullname"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="Fullname" />
+
+            <Button
+                android:id="@+id/btnSend"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Send" android:layout_marginTop="12dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>

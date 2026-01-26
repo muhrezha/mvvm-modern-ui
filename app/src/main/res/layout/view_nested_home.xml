@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_margin="8dp"
+            android:padding="15dp"
+            android:orientation="vertical"
+            android:background="@drawable/card_template_primary">
+
+            <TextView
+                android:text="@string/finance_and_protection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/yellow_grey_800"
+                android:fontFamily="@font/inter_extrabold" />
+
+            <!--Section 1-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="20dp"
+                android:paddingHorizontal="10dp">
+
+                <!-- Item 1 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@android:color/transparent">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/card_template_white"
+                        android:clickable="true"
+                        android:padding="13dp">
+
+                        <RelativeLayout
+                            android:id="@+id/rl_transaction"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+
+                            <ImageView
+                                android:src="@drawable/ic_grid_tga"
+                                android:layout_width="38dp"
+                                android:layout_height="38dp"
+                                android:layout_centerInParent="true"/>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:text="@string/tga"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey_600"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:textSize="13sp"/>
+
+                </LinearLayout>
+
+                <!-- Item 2 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/card_template_white"
+                        android:clickable="true"
+                        android:padding="13dp">
+
+                        <ImageView
+                            android:src="@drawable/ic_grid_urun"
+                            android:layout_width="38dp"
+                            android:layout_height="38dp"
+                            android:layout_centerInParent="true"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/urun"
+                        android:textColor="@color/grey_600"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <!-- Item 3 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/card_template_white"
+                        android:clickable="true"
+                        android:padding="13dp">
+
+                        <ImageView
+                            android:src="@drawable/ic_grid_fin_check"
+                            android:layout_width="37dp"
+                            android:layout_height="37dp"
+                            android:layout_centerInParent="true"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:text="@string/financial_check_up"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey_600"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+                <!-- Item 4 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/card_template_white"
+                        android:clickable="true"
+                        android:padding="13dp">
+
+                        <ImageView
+                            android:src="@drawable/ic_grid_hajj"
+                            android:layout_width="37dp"
+                            android:layout_height="37dp"
+                            android:layout_centerInParent="true"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:text="@string/haji"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey_600"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--Section 2-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="20dp"
+                android:paddingHorizontal="10dp">
+
+                <!-- Item 1 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/card_template_white"
+                        android:clickable="true"
+                        android:padding="13dp">
+
+                        <ImageView
+                            android:src="@drawable/ic_grid_prop_insurance"
+                            android:layout_width="37dp"
+                            android:layout_height="37dp"
+                            android:layout_centerInParent="true"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:text="@string/property_insurance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey_600"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+                <!-- Item 2 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/card_template_white"
+                        android:clickable="true"
+                        android:padding="13dp">
+
+                        <ImageView
+                            android:src="@drawable/ic_grid_car_insurance"
+                            android:layout_width="37dp"
+                            android:layout_height="37dp"
+                            android:layout_centerInParent="true"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:text="@string/car_insurance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey_600"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+                <!-- Empty 2 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"/>
+
+                <!-- Empty 2 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_margin="8dp"
+            android:padding="15dp"
+            android:orientation="vertical"
+            android:background="@drawable/card_template_primary">
+
+            <TextView
+                android:text="@string/marketplace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/yellow_grey_800"
+                android:fontFamily="@font/inter_extrabold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="125dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.MyCRUD.Materials.NoActionBar"
+    tools:context=".views.payungin.views.dashboard.DashboardPayunginActivity">
+
+    <FrameLayout
+        android:id="@+id/frame_dashboard"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:cardElevation="30dp"
+        app:cardBackgroundColor="@color/white">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_nav_dashboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/white"
+            android:elevation="20dp"
+            app:elevation="20dp"
+            android:fitsSystemWindows="false"
+            app:menu="@menu/menu_bottom_nav_fragment"
+            app:labelVisibilityMode="labeled"
+            app:itemIconTint="@color/bnv_icon_tint"
+            app:itemTextColor="@color/bnv_text_tint"
+            app:itemRippleColor="@color/bnv_ripple"
+            app:itemActiveIndicatorStyle="@style/Widget.BNV.ActiveIndicator"
+            />
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

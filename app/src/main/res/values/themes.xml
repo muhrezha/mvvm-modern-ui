@@ -1,0 +1,154 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+<!--    <style name="Base.Theme.MyCRUD" parent="Theme.Material3.DayNight.NoActionBar">-->
+    <style name="Base.Theme.MyCRUD" parent="Theme.AppCompat.Light">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:textViewStyle">@style/MyTextViewStyle</item>
+
+    </style>
+
+    <style name="Theme.MyCRUD.Materials" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary_blue</item>
+        <item name="colorPrimaryDark">@color/primary_blue</item>
+        <item name="colorAccent">@color/accent_blue</item>
+        <item name="android:textViewStyle">@style/MyTextViewStyle</item>
+
+    </style>
+
+    <!-- Theme tanpa ActionBar -->
+    <style name="Theme.MyCRUD.Materials.NoActionBar" parent="Theme.Material3.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:textViewStyle">@style/MyTextViewStyle</item>
+
+    </style>
+
+    <style name="Theme.MyCRUD" parent="Base.Theme.MyCRUD" />
+
+
+<!--    <style name="Base.Theme.MyCRUD.NoActBar" parent="Theme.Material3.Light.NoActionBar">-->
+<!--     </style>-->
+
+    <style name="LoginTextInputLayout" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusBottomEnd">12dp</item>
+        <item name="boxCornerRadiusBottomStart">12dp</item>
+        <item name="boxCornerRadiusTopEnd">12dp</item>
+        <item name="boxCornerRadiusTopStart">12dp</item>
+        <item name="boxStrokeColor">@color/grey_100</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxBackgroundColor">@android:color/transparent</item>
+        <item name="startIconTint">@color/grey_600</item>
+        <item name="endIconTint">@color/grey_600</item>
+        <item name="hintTextColor">@color/grey_100</item>
+    </style>
+
+
+    <style name="Widget.BNV.ActiveIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <!-- warna background indikator -->
+        <item name="android:color">@color/yellow_old</item>
+        <!-- atur bentuk rounded -->
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.BNV.Indicator</item>
+        <item name="android:textViewStyle">@style/MyTextViewStyle</item>
+    </style>
+
+    <!-- res/values/styles.xml -->
+    <style name="ShapeAppearanceOverlay.BNV.Indicator" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+        <item name="android:textViewStyle">@style/MyTextViewStyle</item>
+    </style>
+
+    <!-- res/values/styles.xml -->
+    <style name="ThemeOverlay.BNV.Custom" parent="">
+        <item name="colorSurface">@color/white</item>
+        <item name="navigationIconTint">@color/bnv_icon_tint</item>
+        <item name="itemActiveIndicatorStyle">@style/Widget.BNV.ActiveIndicator</item>
+        <item name="rippleColor">@color/bnv_ripple</item>
+        <item name="itemTextColor">@color/bnv_text_tint</item>
+        <item name="android:textViewStyle">@style/MyTextViewStyle</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.Payungin.BottomNav" parent="Theme.AppCompat.Light">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">16dp</item>
+        <item name="cornerSizeTopRight">16dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+        <item name="android:textViewStyle">@style/MyTextViewStyle</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="CollapsedAppBarTitle" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:textViewStyle">@style/MyTextViewStyle</item>
+    </style>
+
+    <style name="ExpandedAppBarTitle" parent="TextAppearance.Design.CollapsingToolbar.Expanded">
+        <item name="android:textSize">32sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:letterSpacing">0.05</item>
+        <item name="android:textViewStyle">@style/MyTextViewStyle</item>
+    </style>
+
+    <!-- Style untuk expanded state - 3 lines -->
+    <style name="ExpandedAppBar" parent="@android:style/TextAppearance.Material.Widget.ActionBar.Title">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:maxLines">3</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textViewStyle">@style/MyTextViewStyle</item>
+    </style>
+
+    <!-- Style untuk collapsed state - 1 line dengan ellipse -->
+    <style name="CollapsedAppBar" parent="@android:style/TextAppearance.Material.Widget.ActionBar.Title">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textViewStyle">@style/MyTextViewStyle</item>
+    </style>
+
+    <!-- Style untuk TextView dengan font custom -->
+    <style name="MyTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/inter_light</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="BoldText" parent="android:Widget.TextView">
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/inter_bold</item>
+    </style>
+
+    <style name="ExtraBoldText" parent="android:Widget.TextView">
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/inter_extrabold</item>
+    </style>
+
+    <!-- Style untuk Button -->
+    <style name="MyButtonStyle" parent="Widget.Material3.Button">
+        <item name="android:fontFamily">@font/inter_light</item>
+    </style>
+
+    <style name="ExpandedTitleStyle" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">0sp</item> <!-- Sembunyikan title saat expanded -->
+        <item name="android:textColor">@android:color/transparent</item>
+    </style>
+
+    <style name="CollapsedTitleStyle" parent="TextAppearance.Design.CollapsingToolbar.Expanded">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:ignore="HardcodedText"
+    tools:context=".MainActivity">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:gravity="start">
+
+       <ScrollView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               tools:ignore="UselessParent">
+
+               <androidx.cardview.widget.CardView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="10dp">
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:baselineAligned="false"
+                       android:orientation="horizontal"
+                       android:gravity="center"
+                       tools:ignore="UselessParent"
+                       android:padding="10dp">
+
+                       <LinearLayout
+                           android:id="@+id/ll_one"
+                           android:layout_width="0dp"
+                           android:layout_height="wrap_content"
+                           android:layout_weight="1"
+                           android:orientation="vertical"
+                           android:gravity="center">
+
+                           <Space
+                               android:layout_width="wrap_content"
+                               android:layout_height="10dp"/>
+
+                           <Button
+                               android:id="@+id/btn_increment"
+                               android:text="Increment"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:textColor="@color/color_btn_primary"
+                               android:background="@drawable/draw_btn_primary"
+                               android:textAllCaps="false"/>
+
+                           <Space
+                               android:layout_width="wrap_content"
+                               android:layout_height="10dp"/>
+
+                           <Button
+                               android:id="@+id/btn_decrement"
+                               android:text="Decrement"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:textColor="@color/color_btn_secondary"
+                               android:background="@drawable/draw_btn_secondary"
+                               android:textAllCaps="false"/>
+
+                           <Space
+                               android:layout_width="wrap_content"
+                               android:layout_height="10dp"/>
+
+
+                       </LinearLayout>
+
+                       <LinearLayout
+                           android:id="@+id/ll_two"
+                           android:layout_width="0dp"
+                           android:layout_height="wrap_content"
+                           android:layout_weight="1"
+                           android:orientation="vertical"
+                           android:gravity="center"
+                           android:padding="10sp">
+
+                           <TextView
+                               android:id="@+id/tv_one"
+                               android:text="empty"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               />
+
+                           <Space
+                               android:layout_width="0dp"
+                               android:layout_height="20dp" />
+
+                           <TextView
+                               android:id="@+id/tv_two"
+                               android:text="empty"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               />
+
+
+                       </LinearLayout>
+
+                       <LinearLayout
+                           android:layout_width="0dp"
+                           android:layout_height="wrap_content"
+                           android:layout_weight="1"
+                           android:orientation="vertical"
+                           android:gravity="center">
+
+                           <Space
+                               android:layout_width="wrap_content"
+                               android:layout_height="10dp"/>
+
+                           <Button
+                               android:id="@+id/btnReqCamera"
+                               android:text="Req Camera"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:textColor="@color/color_btn_primary"
+                               android:background="@drawable/draw_btn_primary"
+                               android:textAllCaps="false"/>
+
+                           <Space
+                               android:layout_width="wrap_content"
+                               android:layout_height="10dp"/>
+
+                           <Button
+                               android:id="@+id/btnReqGallery"
+                               android:text="Req Gallery"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:textColor="@color/color_btn_secondary"
+                               android:background="@drawable/draw_btn_secondary"
+                               android:textAllCaps="false"/>
+
+                           <Space
+                               android:layout_width="wrap_content"
+                               android:layout_height="10dp"/>
+
+
+                       </LinearLayout>
+
+                   </LinearLayout>
+
+               </androidx.cardview.widget.CardView>
+
+               <Space
+                   android:layout_width="match_parent"
+                   android:layout_height="6dp"/>
+
+               <androidx.cardview.widget.CardView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="10dp">
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       android:padding="18dp">
+
+                       <Space
+                           android:layout_width="wrap_content"
+                           android:layout_height="@dimen/space_height_4"/>
+
+                       <Button
+                           android:id="@+id/btnKotlinCompose"
+                           android:text="Kotlin Compose"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:textColor="@color/color_btn_hint"
+                           android:background="@drawable/draw_btn_hint"
+                           android:textAllCaps="false"
+                           android:layout_margin="@dimen/margin_1_7"/>
+
+                       <Space
+                           android:layout_width="wrap_content"
+                           android:layout_height="@dimen/space_height_4"/>
+
+                       <Button
+                           android:id="@+id/btn_login"
+                           android:text="Login"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:textColor="@color/color_btn_hint"
+                           android:background="@drawable/draw_btn_hint"
+                           android:textAllCaps="false"
+                           android:layout_margin="@dimen/margin_1_7"/>
+
+                       <Space
+                           android:layout_width="wrap_content"
+                           android:layout_height="@dimen/space_height_8"/>
+
+
+                   </LinearLayout>
+
+               </androidx.cardview.widget.CardView>
+
+               <Space
+                   android:layout_width="match_parent"
+                   android:layout_height="6dp"/>
+
+               <androidx.cardview.widget.CardView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_margin="10dp">
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       android:padding="18dp">
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:orientation="horizontal">
+
+                           <LinearLayout
+                               android:layout_width="0dp"
+                               android:layout_height="wrap_content"
+                               android:layout_weight="1">
+
+                               <Button
+                                   android:id="@+id/btn_fragment"
+                                   android:text="Fragment View"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"/>
+
+                           </LinearLayout>
+
+                           <Space
+                               android:layout_width="8dp"
+                               android:layout_height="0dp"/>
+
+                           <LinearLayout
+                               android:layout_width="0dp"
+                               android:layout_height="wrap_content"
+                               android:layout_weight="1">
+
+                               <Button
+                                   android:id="@+id/btn_grid"
+                                   android:text="Grid View"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"/>
+
+                           </LinearLayout>
+
+                       </LinearLayout>
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:orientation="horizontal">
+
+                           <LinearLayout
+                               android:layout_width="0dp"
+                               android:layout_height="wrap_content"
+                               android:layout_weight="1">
+
+                               <Button
+                                   android:id="@+id/btn_nav_drawer"
+                                   android:text="Nav Drawer View"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"/>
+
+                           </LinearLayout>
+
+                           <Space
+                               android:layout_width="8dp"
+                               android:layout_height="0dp"/>
+
+                           <LinearLayout
+                               android:layout_width="0dp"
+                               android:layout_height="wrap_content"
+                               android:layout_weight="1">
+
+                               <Button
+                                   android:id="@+id/btn_tabbar"
+                                   android:text="Tabbar"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"/>
+
+                           </LinearLayout>
+
+                       </LinearLayout>
+
+                       <Button
+                           android:id="@+id/btnRoomDb"
+                           android:text="Room DB"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"/>
+
+                       <Button
+                           android:id="@+id/btnAppbar"
+                           android:text="UI Collapse Appbar"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"/>
+
+                       <Button
+                           android:id="@+id/btnSqlite"
+                           android:text="SQLite"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"/>
+
+                       <Button
+                           android:id="@+id/btnSetting"
+                           android:text="Setting Permission"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"/>
+
+
+                   </LinearLayout>
+
+               </androidx.cardview.widget.CardView>
+
+               <Space
+                   android:layout_width="match_parent"
+                   android:layout_height="500dp"/>
+
+           </LinearLayout>
+
+       </ScrollView>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
