@@ -58,77 +58,79 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
-       try {
-           initViews()
-           setupClickListeners()
+        try {
+            initViews()
+            setupClickListeners()
 
-           btnReqCamera.setOnClickListener {
-               if (PermissionManager.instance.hasCameraPermission(this)) {
-                   Toast.makeText(this, "Camera Permission Granted!", Toast.LENGTH_LONG).show()
-               } else {
-                   Toast.makeText(this, "Need req permission", Toast.LENGTH_LONG).show()
-               }
-           }
+            btnReqCamera.setOnClickListener {
+                if (PermissionManager.instance.hasCameraPermission(this)) {
+                    Toast.makeText(this, "Camera Permission Granted!", Toast.LENGTH_LONG).show()
+                } else {
+                    Toast.makeText(this, "Need req permission", Toast.LENGTH_LONG).show()
+                }
+            }
 
-           btnReqGallery.setOnClickListener {
-               if (PermissionManager.instance.hasGalleryPermission(this)) {
-                   Toast.makeText(this, "Gallery Permission Granted!", Toast.LENGTH_LONG).show()
-               } else {
-                   Toast.makeText(this, "Need req permission", Toast.LENGTH_LONG).show()
-               }
-           }
+            btnReqGallery.setOnClickListener {
+                if (PermissionManager.instance.hasGalleryPermission(this)) {
+                    Toast.makeText(this, "Gallery Permission Granted!", Toast.LENGTH_LONG).show()
+                } else {
+                    Toast.makeText(this, "Need req permission", Toast.LENGTH_LONG).show()
+                }
+            }
 
-           btnLogin.setOnClickListener({
-               val intent = Intent(this, LoginActivity::class.java)
-               startActivity(intent)
-           })
+            btnLogin.setOnClickListener({
+                val intent = Intent(this, LoginActivity::class.java)
+                startActivity(intent)
+            })
 
-           btnKotlinCompose.setOnClickListener({
-               val intent = Intent(this, MainComposeActivity::class.java)
-               startActivity(intent)
-           })
+            btnKotlinCompose.setOnClickListener({
+                val intent = Intent(this, MainComposeActivity::class.java)
+                startActivity(intent)
+            })
 
-           btnGrid.setOnClickListener({
-               val intent = Intent(this, GridActivity::class.java)
-               startActivity(intent)
-           })
+            btnGrid.setOnClickListener({
+                val intent = Intent(this, GridActivity::class.java)
+                startActivity(intent)
+            })
 
-           btnNavDrawer.setOnClickListener({
-               val intent = Intent(this, NavDrawerActivity::class.java)
-               intent.putExtra("paramFromMainActivity", "Goo!!!!!!!!!!!")
-               startActivity(intent)
-           })
+            btnNavDrawer.setOnClickListener({
+                val intent = Intent(this, NavDrawerActivity::class.java)
+                intent.putExtra("paramFromMainActivity", "Goo!!!!!!!!!!!")
+                startActivity(intent)
+            })
 
-           btnTabbar.setOnClickListener({
-               val intent = Intent(this, MainTabActivity::class.java)
-               startActivity(intent)
-           })
+            btnTabbar.setOnClickListener({
+                val intent = Intent(this, MainTabActivity::class.java)
+                startActivity(intent)
+            })
 
-           btnAppBar.setOnClickListener({
-               val intent = Intent(this, CollapseActivity::class.java)
-               startActivity(intent)
-           })
+            /*Class ini tidak ada diprohect :app, tetapi bisa dipanggil karena
+                implementation(project(":myroomdb")) di gradle :app.
+             code ref: 001-roomdb*/
+            btnAppBar.setOnClickListener({
+                val intent = Intent(this, CollapseActivity::class.java)
+                startActivity(intent)
+            })
 
-           btnRoomDb.setOnClickListener({
-               val intent = Intent(this, MainActivity::class.java)
-               startActivity(intent)
-           })
+            btnRoomDb.setOnClickListener({
+                val intent = Intent(this, MainActivity::class.java)
+                startActivity(intent)
+            })
 
-           btnSqlite.setOnClickListener({
-               val intent = Intent(this, ProductActivity::class.java)
-               startActivity(intent)
-           })
+            btnSqlite.setOnClickListener({
+                val intent = Intent(this, ProductActivity::class.java)
+                startActivity(intent)
+            })
 
-           btnSettingPermission.setOnClickListener({
-               val intent = Intent(this, SettingActivity::class.java)
-               startActivity(intent)
-           })
+            btnSettingPermission.setOnClickListener({
+                val intent = Intent(this, SettingActivity::class.java)
+                startActivity(intent)
+            })
 
 
-
-       }catch (e: Exception){
-           Log.e(Consts.TAG, "Exception: ${e.message}", e)
-       }
+        } catch (e: Exception) {
+            Log.e(Consts.TAG, "Exception: ${e.message}", e)
+        }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -189,10 +191,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun printUserInfo(user: UserTest) {
-        Log.w(Consts.TAG,"=== USER INFO ===")
+        Log.w(Consts.TAG, "=== USER INFO ===")
         Log.w(Consts.TAG, user.getUserInfo())
-        Log.w(Consts.TAG,"=================")
-        Toast.makeText(this,
+        Log.w(Consts.TAG, "=================")
+        Toast.makeText(
+            this,
             "User Created: ${user.getUserInfo()}",
             Toast.LENGTH_LONG
         ).show()

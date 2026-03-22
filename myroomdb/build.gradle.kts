@@ -17,6 +17,9 @@ android {
 }
 
 dependencies {
+    /*Tidak ada lib room_db, tetapi care impl gradle dari :core,
+     maka project module myroomdb bisa panggil lib bawaan roomdb.
+     code ref: 001-roomdb*/
     implementation(project(":core"))
     implementation(libs.androidx.appcompat)
     implementation(libs.material)

@@ -19,6 +19,8 @@ android {
 }
 
 dependencies {
+    /*Panggil semua module project.
+             code ref: 001-roomdb*/
     implementation(project(":core"))
     implementation(project(":myroomdb"))
     implementation(project(":mycompose"))
